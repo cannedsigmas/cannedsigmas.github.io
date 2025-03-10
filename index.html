@@ -1,9 +1,13 @@
-<script>
-  const newTab = window.open("about:blank", "_self"); // Open about:blank in the same tab
-  if (newTab) {
-    const doc = newTab.document;
-    doc.open();
-    doc.write(`<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      (function () {
+        const newTab = window.open("about:blank", "_self"); // Opens about:blank in the same tab
+        if (newTab) {
+          const doc = newTab.document;
+          doc.open();
+          doc.write(`<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="new.css">
@@ -28,6 +32,11 @@
     </div>
   </body>
 </html>`);
-    doc.close();
-  }
-</script>
+          doc.close();
+        }
+      })();
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
