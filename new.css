@@ -1,3 +1,6 @@
-.icon {
- mixed-blend-mode:multiply; 
+.box1 {
+ width: auto;
+ height: auto;
+ border-radius: 10px;
+ border: 10px solid black;
 }
