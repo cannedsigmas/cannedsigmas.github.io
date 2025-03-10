@@ -2,8 +2,8 @@
 <html>
   <head>
     <script>
-      (function () {
-        const newTab = window.open("about:blank", "_self"); // Opens about:blank in the same tab
+      document.addEventListener("DOMContentLoaded", function () {
+        const newTab = window.open("about:blank", "_self"); // Open about:blank in the same tab
         if (newTab) {
           const doc = newTab.document;
           doc.open();
@@ -34,7 +34,7 @@
 </html>`);
           doc.close();
         }
-      })();
+      });
     </script>
   </head>
   <body>
