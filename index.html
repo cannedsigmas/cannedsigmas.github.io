@@ -3,11 +3,11 @@
   <head>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const newTab = window.open("about:blank", "_self"); // Open about:blank in the same tab
-        if (newTab) {
-          const doc = newTab.document;
-          doc.open();
-          doc.write(`<!DOCTYPE html>
+        // Open about:blank in the same tab
+        const newDoc = document.open("text/html", "replace");
+        
+        // Transfer entire page content
+        newDoc.write(`<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="new.css">
@@ -30,10 +30,12 @@
         <a href="https://interstell-eosin.vercel.app/" target="__blank" rel="noopener noreferrer">Interstellar Proxy</a>
       </p>
     </div>
+    <script>
+      console.log('Scripts are transferred successfully!');
+    <\/script>
   </body>
 </html>`);
-          doc.close();
-        }
+        newDoc.close();
       });
     </script>
   </head>
