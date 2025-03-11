@@ -25,16 +25,23 @@ body {
     z-index: 999;    /* Keeps it on top of other elements */
 }
 #popup-image {
-    position: bottom;
-    bottom: 10px; /* Moves the image to the bottom */
-    left: 50%;
-    transform: translateX(-50%); /* Centers it horizontally */
-    max-width: 80%;
-    max-height: 150px; /* Adjust height if needed */
+    position: fixed; /* Sticks to the viewport */
+    bottom: -1vh; /* Sometimes there's a hidden gap */
+    left: 50%; /* Centers it */
+    transform: translateX(-50%); /* Ensures it's truly centered */
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 00px;
-    z-index: 1000;
+    border-radius: 0px;
+    z-index: 99999; /* Brings it to the front */
+    background-size: cover;
+    overflow: visible;
 }
+
+
+
 
 
 .hidden {
