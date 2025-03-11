@@ -4,22 +4,39 @@
     <link rel="stylesheet" href="new.css">
     <title>WakeID Portal</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png?">
-    
-
-  
   </head>
   <body style="background-color:#CCF3F6">
     <br>
     <br>
-    <small><h style="font-family:Courier">We all love games, proxies, and bypassed websites to use during school. This website is a safe haven for all who fall under that category, to submit websites, and to use them.</h></small>
+    <small><h style="font-family:Courier">
+      We all love games, proxies, and bypassed websites to use during school. 
+      This website is a safe haven for all who fall under that category, 
+      to submit websites, and to use them.
+    </h></small>
+    
     <div class="hr1"><hr></div>
+    
     <div class="box1">
-      <p style="font-family"Arial">-- CONFIRMED WEBSITES --</p>
+      <p style="font-family:Arial">-- CONFIRMED WEBSITES --</p>
       <br>
-      <p style="font-family"Comic sans MS">
+      <p style="font-family:Comic Sans MS">
         <a href="https://interstell-eosin.vercel.app/" target="__blank" rel="noopener noreferrer">Interstellar Proxy</a>
+      </p>
     </div>
 
-  
+    <!-- Email Submission Form -->
+    <div class="box2">
+      <h3>Submit a Message</h3>
+      <form action="send_email.php" method="post">
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+        
+        <input type="submit" value="Send">
+      </form>
+    </div>
+
   </body>
 </html>
