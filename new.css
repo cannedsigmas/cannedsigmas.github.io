@@ -14,15 +14,28 @@ body {
     position: fixed;  /* Sticks to the top */
     top: 0;           /* Aligns it at the very top */
     left: 0;          /* Aligns it to the left edge */
-    width: 100vw;     /* Full width of the viewport */
-    height: auto;     /* Change this value to adjust height */
-    background-color: #222222; /* Example background */
+    width: 90vw;     /* Full width of the viewport */
+    height: 138px;     /* Change this value to adjust height */
+    background-color: #000000; /* Example background */
     color: white;     /* Text color */
     display: flex;    /* Centers content */
     align-items: center; 
     justify-content: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow */
     z-index: 999;    /* Keeps it on top of other elements */
+    opacity: 0.6;
+}
+.side-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: 10vw;
+    overflow: hidden;
+    background-color: crimson;
+    color: white;
+    display: flex;
+    z-index: 998;
 }
 #popup-image {
     position: fixed; /* Sticks to the viewport */
@@ -41,6 +54,10 @@ body {
 }
 
 
+.br1 {
+    display: block;
+    margin: 100px 0; /* Adjust height of line break */
+}
 
 
 

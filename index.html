@@ -21,15 +21,42 @@
         height: auto;
         z-index: 1000;
       }
+      .close-btn {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        border: 2px red solid;
+        background: none;
+        color: red;
+        padding: 5px;
+        z-index: 9999;
+      }
+      .reopen-btn {
+        position: fixed;
+        top: 5px;
+        left: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        background: white;
+        border: 2px black solid;
+        padding: 5px;
+        z-index: 9999;
+        display: none;
+      }
     </style>
     <script>
-      document.addEventListener("keydown", function(event) {
-        if (event.key === "'") { // Change "Escape" to any key you want
-          window.location.href = "https://wcpss.instructure.com/?login_success=1"; // Change to your safe site
-        }
-      });
+      function closeTopBox() {
+        document.getElementById("top-box").style.display = "none";
+        document.getElementById("reopen-btn").style.display = "block"; // Show the reopen button
+      }
+
+      function openTopBox() {
+        document.getElementById("top-box").style.display = "block";
+        document.getElementById("reopen-btn").style.display = "none"; // Hide the reopen button
+      }
     </script>
-    
   </head>
   <body>
     <img src="dashboard.png" id="popup-image" class="hidden">
@@ -42,23 +69,28 @@
         }
       });
     </script>
-    
 
-    <div class="top-box">
+    <!-- Top Box -->
+    <div class="top-box" id="top-box">
+      <button class="close-btn" onclick="closeTopBox()">X</button>
       <a href="https://wcpss.instructure.com/?login_success=1" target="_blank" rel="noopener noreferrer"> Wcpss Instructure</a>
+      <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><big>TO GET THE BEST EXPERIENCE, PLEASE USE THIS WEBSITE IN FULL-SCREEN MODE.</big></h1>
+      <br>
+      <div class="side-box">
+        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><big>WakeId Portal</big></h1>
+      </div>
+      <br>
     </div>
-  
-    <br>
-    <br>
+
+    <!-- Reopen Button (Initially Hidden) -->
+    <button id="reopen-btn" class="reopen-btn" onclick="openTopBox()">▼</button>
     
-      <p>We all love games, proxies, and bypassed websites to use during school. 
-      This website is a safe haven for all who fall under that category, 
-      to submit websites, and to use them.</p>
+    <p>We all love games, proxies, and bypassed websites to use during school. 
+    This website is a safe haven for all who fall under that category, 
+    to submit websites, and to use them.</p>
     <br>
     <p>Press 'P' to show hidden image.</p>
     <p>Press ' for panic button</p>
-    
-    <div class="hr1"><hr></div>
     
     <div class="box1">
       <div class="internal-box1">
