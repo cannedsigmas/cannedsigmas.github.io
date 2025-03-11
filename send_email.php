@@ -3,8 +3,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
     $message = htmlspecialchars($_POST["message"]);
 
-    $to = "your-email@example.com"; // Change this to your actual email
-    $subject = "New Message from WakeID Portal";
+    $to = "ermailoof@gmail.com"; // Change this to your actual email
+    $subject = "New Message from cannedsigmas.github.io";
     $body = "From: $email\n\nMessage:\n$message";
     $headers = "From: $email";
 
