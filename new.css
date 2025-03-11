@@ -1,16 +1,26 @@
 body {
+    font-family: 'Roboto';
     min-height: 100vh;
-    margin: 0; 
+    margin: 1vw; 
     background: linear-gradient(to bottom, #e7e7e7, #5e5e5e);
 }
 
 .box1 {
- width: auto;
- height: auto;
- border-radius: 10px;
- border: 10px solid black;
- border-width: thin;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    border: 10px solid black;
+    border-width: thin;
 }
+
+.internal-box1 {
+    margin: 1vw; 
+}
+
+.internal-box1 a {
+    font-weight: bold;
+}
+
 input {
     border-radius: 50px;
 }
