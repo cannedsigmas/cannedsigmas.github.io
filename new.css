@@ -1,9 +1,7 @@
 body {
-    min-height: 100vh;
-    margin: 0; 
-    background: linear-gradient(to bottom, #e7e7e7, #5e5e5e);
+    background-color: #1e1e1e;
+    color: #e0e0e0;
 }
-
 .box1 {
  width: auto;
  height: auto;
