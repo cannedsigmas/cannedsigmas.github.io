@@ -38,7 +38,7 @@ body {
     z-index: 998;
 }
 #popup-image {
-    position: fixed; /* Sticks to the viewport */
+    position: relative; /* Sticks to the viewport */
     bottom: -1vh; /* Sometimes there's a hidden gap */
     left: 50%; /* Centers it */
     transform: translateX(-50%); /* Ensures it's truly centered */
