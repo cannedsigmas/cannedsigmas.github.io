@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'rubik';
     min-height: 100vh;
     margin: 0;
     background-color: #1e1e1e;
@@ -14,7 +14,7 @@ body {
     position: fixed;  /* Sticks to the top */
     top: 0;           /* Aligns it at the very top */
     left: 0;          /* Aligns it to the left edge */
-    width: 90vw;     /* Full width of the viewport */
+    width: 90%;     /* Full width of the viewport */
     height: 138px;     /* Change this value to adjust height */
     background-color: #000000; /* Example background */
     color: white;     /* Text color */
@@ -30,27 +30,29 @@ body {
     top: 0;
     right: 0;
     height: auto;
-    width: 10vw;
+    width: 15vw;
     overflow: hidden;
     background-color: crimson;
     color: white;
     display: flex;
     z-index: 998;
+    margin-right: 5px;
 }
 #popup-image {
     position: relative; /* Sticks to the viewport */
     bottom: -1vh; /* Sometimes there's a hidden gap */
     left: 50%; /* Centers it */
-    transform: translateX(-50%); /* Ensures it's truly centered */
+    transform: translateX(-50%); 
     width: auto;
     max-width: 100%;
-    height: auto;
+    height: 100%;
     max-height: 150px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     border-radius: 0px;
-    z-index: 99999; /* Brings it to the front */
+    z-index: 99999; 
     background-size: cover;
     overflow: visible;
+    flex-direction: column;
+    margin-top: -20px;
 }
 
 
@@ -121,6 +123,7 @@ input, textarea {
 button {
     font-size: 1.2rem;
     padding: 10px 20px;
+    border: 50px solid black;
     border-radius: 10px;
     cursor: pointer;
     border: none;
